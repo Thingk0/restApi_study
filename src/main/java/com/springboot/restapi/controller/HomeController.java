@@ -18,6 +18,8 @@ public class HomeController {
     @GetMapping("/")
     public String home(Locale locale, Model model) {
 
+        log.info("Welcome home! The client local is " + locale + ".");
+
         // 현재시간 가져오기.
         LocalDateTime now = LocalDateTime.now();
 
