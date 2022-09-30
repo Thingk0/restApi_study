@@ -4,23 +4,15 @@ import lombok.*;
 
 import java.time.LocalDateTime;
 
-@NoArgsConstructor
 @RequiredArgsConstructor
-@Getter
-@Setter
-@EqualsAndHashCode(of = "boardNo")
-@ToString(exclude = "boardNo")
-public class Board {
-
-    private Integer boardNo;
+@ToString
+public class  Board {
 
     @NonNull
+    private Integer boardNo;
     private String title;
-
     private String content;
-
     private String writer;
-
     private LocalDateTime regDate;
 
 }
